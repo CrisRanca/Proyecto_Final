@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- CABECERA -->
+        <LinearLayout
+            android:id="@+id/cabeceraEditarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar usuario"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <!-- NOMBRE -->
+        <EditText
+            android:id="@+id/etNombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:hint="Nombre"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/etEmailUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:hint="Email"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- MASCOTAS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mascota:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgMascota1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mascota_lv1"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imgMascota2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mascota_lv5"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imgMascota3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mascota_lv10"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imgMascota4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mascota_lv20"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imgMascota5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mascota_lv30"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- COLOR TEMA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color del tema:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/colorGris"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#E5E5E5"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:id="@+id/colorNaranja"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#FAE5D3"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:id="@+id/colorVerde"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#D4EFDF"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:id="@+id/colorAzul"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#D1E8FF"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:id="@+id/colorMorado"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#EBDEF0" />
+        </LinearLayout>
+
+        <!-- BOTONES -->
+        <Button
+            android:id="@+id/btnGuardarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:text="Guardar cambios"
+            android:textColor="#000000"
+            android:background="@drawable/button_outline_grey"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancelarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:text="Cancelar"
+            android:textColor="#000000"
+            android:background="@drawable/button_outline" />
+
+    </LinearLayout>
+</ScrollView>

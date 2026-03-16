@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- CABECERA -->
+        <LinearLayout
+            android:id="@+id/cabeceraRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvTituloRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar seguimiento"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <!-- NOTA -->
+        <EditText
+            android:id="@+id/etNotaSeguimiento"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:hint="Nota (opcional)"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- VECES CUMPLIMIENTO -->
+        <EditText
+            android:id="@+id/etVecesCumplimiento"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:hint="Veces cumplido hoy"
+            android:inputType="number"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:textColor="#000000" />
+
+        <!-- ÁNIMO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ánimo:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAnimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton android:id="@+id/rb1" android:text="1" />
+            <RadioButton android:id="@+id/rb2" android:text="2" />
+            <RadioButton android:id="@+id/rb3" android:text="3" />
+            <RadioButton android:id="@+id/rb4" android:text="4" />
+            <RadioButton android:id="@+id/rb5" android:text="5" />
+        </RadioGroup>
+
+        <!-- BOTÓN GUARDAR -->
+        <Button
+            android:id="@+id/btnGuardarSeguimiento"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="16dp"
+            android:text="Guardar"
+            android:textColor="#000000"
+            android:background="@drawable/button_outline_grey"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
